@@ -1,0 +1,71 @@
+.user_one{
+  position: relative;
+  width: fit-content;
+  min-width: 200px;
+  max-width: 70%;
+  background-color: #dcf8c6;
+  border-radius: 7px 0px 7px 7px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.083);
+  margin: 2px 0px 2px auto;
+  padding: 5px 10px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  animation: slidein 0.3s;
+
+  .arrow_right{
+    position: absolute;
+    right: -15px;
+    top: -2px;
+    height: 15px;
+    width: 15px;
+    color: #fff;
+
+    svg{
+      width: 8px;
+      height: 13px;
+      fill: #dcf8c6
+    }
+  }
+
+  .time_and_receiver{
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+
+    margin-left: auto;
+
+    .time{
+      position: relative;
+      bottom: 0;
+    }
+  }
+}
+
+.message{
+  word-wrap: normal;
+  margin-top: 3px;
+  padding: 0;
+  color: rgb(73, 73, 73);
+  word-break: break-word;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateX(30%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0%);
+  }
+}
